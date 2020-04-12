@@ -1,0 +1,814 @@
+/*
+ * PieCSS v1.0.0 ()
+ * Copyright 2020 by Eugy Enoch (https://eugyenoch.github.io/pie/)
+ * For PieCSS,
+ * MIT License 
+ */
+
+/*CSS Reset and Browser Initializing*/
+/*
+*One benefit of this section of CSS is for the practice known as the CSS or the browser Reset.
+*In your work, please note that the <b> and <i> elements 
+*for bold and italics respectively have been deprecated 
+*and might be removed in future revisions of the PieCSS framework
+*It is hence advised to use the <strong> and <em> elements respectively
+*The <i> element can be best be used now when working with icons.
+*/
+
+/*CSS reset => Cross browser CSS Reset Rules*/
+*,*:before,*:after{box-sizing:inherit;}
+*[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted;}
+/*Remove the margin in all browsers*/
+body{margin:0;} 
+
+/*=>Cross browser Initializing and adjustments*/
+/*
+* Extract from normalize.css v8.0.1 
+* by Nicolas Gallagher and Jonathan Neal
+* Released under the MIT license 
+* http://github.com/necolas/normalize.css/blob/master/normalize.css 
+*/
+
+/*Prevents adjustment of font size after changes in iOS*/
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+
+/*Renders elements consistently in older browsers, esp. in IE*/
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
+audio,canvas,progress,video{display:inline-block}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+
+/*Adjusts the correct vertical alignment in
+; Chrome, Firefox and Opera*/
+progress{vertical-align:baseline}
+
+/*Adjusts background on hyperlinks in IE 10*/
+a{background-color:transparent;-webkit-text-decoration-skip:objects}
+a:active,a:hover{outline-width:0}
+
+/*Removes the bottom border in chrome 57- 
+;and adds the correct text decoration in Chrome, Edge, IE, Opera and Safari*/
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}
+
+/*Prevenets the 'sub' and 'sup' elements from affecting the line height
+;in all browsers*/
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}
+
+/*Removes the border on images inside links in IE 10*/
+img{border-style:none}svg:not(:root){overflow:hidden}
+
+/*corrects the inheritance and scaling of font size in all browsers*/
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+hr{box-sizing:content-box;height:0;overflow:visible}
+
+/*changes the font syles for forms in all browsers
+;and removes form margins in Firefox and Safari*/
+button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}
+
+/*removes the inheritance of text transform from form elements 
+;in IE,Edge and Firefox*/
+button,select{text-transform:none}
+
+/*Shows the form element overflow in IE and Edge*/
+button,input{overflow:visible}
+
+/*Corrects the inability to style clickable types in iOS and Safari*/
+button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+
+/*Removes the inner border and padding in Firefox*/
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner{border-style:none;padding:0}
+
+/*Restores the focus styles unset by the styling above*/
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+
+/*Corrects the padding in Firefox*/
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+
+/*Corrects the text-wrapping and color inheritance in IE and Edge*/
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}
+
+/*removes the default vertical scrollbar in IE 10 */
+textarea{overflow:auto}
+
+/*Removes the padding in IE 10*/
+[type=checkbox],[type=radio]{padding:0}
+
+/*Corrects the cursor style of ++ and -- buttons in Chrome*/
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+
+/*Corrects the odd appearance and outline style in Safari*/
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,
+
+/*removes the inner padding and color in Chrome and Chrome and Safari on MacOS*/
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-input-placeholder{color:inherit;opacity:0.54}
+
+/*Corrects the inability to style clickable types in iOS and Safari 
+; and changes font properties in Safari*/
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/*CSS Reset and Browser Initializing ends*/
+/*;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;*/
+/*MAIN CSS*/ 
+/*Common rules*/
+
+/*adjust browser viewport orientation on the x-axis*/
+html{overflow-x:hidden;box-sizing:border-box;}
+
+/*Correct line height and set scroll and font properties in all browsers*/
+body{font-family:Tahoma,Verbuna,Orbitron,Helvetica,Verdana,sans-serif;font-size:14px;line-height:1.5;color:#000000;scroll-behavior:smooth;}
+h1{font-size:36px;}h2{font-size:30px;}h3{font-size:24px;}h4{font-size:20px;}h5{font-size:18px;}h6{font-size:16px;}
+@media (max-width:610px){
+h1{font-size:20px;}h2{font-size:18px;}h3{font-size:16px;}h4{font-size:14px;}h5{font-size:12px;}h6{font-size:10px;}}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,Tahoma,Verbuna,Orbitron,Helvetica,Verdana,sans-serif;font-weight:400;margin:10px 0;}
+hr{border:0;border-top:1px solid #eee;margin:20px 0;}
+p{margin-top:0;margin-bottom:auto;} mark{background-color:#E6E6FA;padding:10px;} abbr{border-bottom:dashed;letter-spacing:2px;}
+
+/*Use the #pie or .pie to create your main container - optional but useful*/
+#pie{overflow:hidden;display:inline-block;margin:6px;} /*OR*/ .pie{overflow:hidden;display:inline-block;margin:6px;}
+
+/*Use the #radius or .radius to create your inner major containers - optional*/
+#radius{position:absolute;overflow:hidden;padding-top:10px;padding-bottom:10px;display:inline-block;} /*OR*/ .radius{position:absolute;overflow:hidden;padding-top:10px;padding-bottom:10px;display:inline-block;}
+
+#pie:after,#radius:after,.pie:after,.radius:after,.radius-row:after,.arc:after,#arc:after{content:"";display:table;clear:both;}
+
+/*RADIUS in PieCss represents Inner major sectors - that is Rows and columns*/
+/*Full width radius ->(row and column)
+*The use of 'row' may be deprecated in the future to give rise to full radius rules
+*Also the use of the #pie-? id may be replaced or removed entirely in future release*/
+.radius-row{position:absolute;width:100%;height:100%;overflow:hidden;}
+/*OR*/
+#pie-360{position:absolute;width:100%;height:100%;overflow:hidden;}
+
+/*Two equal columns in one row*/
+.radius-row-half{position:absolute;width:50%;height:auto;overflow:hidden;}
+/*OR*/
+#pie-180{position:absolute;width:50%;height:auto;overflow:hidden;}
+
+/*Three equal columns in one row*/
+.radius-row-third{position:absolute;width:33.33%;height:auto;overflow:hidden;}
+/*OR*/
+#pie-120{position:absolute;width:33.33%;height:auto;overflow:hidden;}
+
+/*Four equal columns in one row*/
+.radius-row-quarter{position:absolute;width:25%;height:auto;overflow:hidden;}
+/*OR*/
+#pie-90{position:absolute;width:25%;height:auto;overflow:hidden;}
+
+/*Two third of a row*/
+.radius-row-two{position:absolute;width:66.66%;height:auto;overflow:hidden;}
+/*OR*/
+#pie-66{position:absolute;width:66.66%;height:auto;overflow:hidden;}
+
+/*three quarter of a row*/
+.radius-row-three{position:absolute;width:75%;height:auto;overflow:hidden;}
+/*OR*/
+#pie-75{position:absolute;width:75%;height:auto;overflow:hidden;}
+
+/*Mobile responsiveness for any rows chosen above*/
+@media(max-width:600px){.radius-row-half{position:absolute;width:100%;height:auto;overflow:hidden;;}
+	#pie-180{position:absolute;width:100%;height:auto;overflow:hidden;}}
+@media(max-width:600px){.radius-row-third{position:absolute;width:100%;height:auto;overflow:hidden;;}
+	#pie-120{position:absolute;width:100%;height:auto;overflow:hidden;}}
+@media(max-width:600px){.radius-row-quarter{position:absolute;width:100%;height:auto;overflow:hidden;;}
+    #pie-90{position:absolute;width:100%;height:auto;overflow:hidden;}}
+	@media(max-width:990px){.radius-row-quarter{position:absolute;width:50%;height:auto;overflow:hidden;;}
+    #pie-90{position:absolute;width:50%;height:auto;overflow:hidden;}}
+@media(max-width:600px){.radius-row-two{position:absolute;width:100%;height:auto;overflow:hidden;;}
+    #pie-66{position:absolute;width:100%;height:auto;overflow:hidden;}}
+@media(max-width:600px){.radius-row-three{position:absolute;width:100%;height:auto;overflow:hidden;;}
+    #pie-75{position:absolute;width:100%;height:auto;overflow:hidden;}}
+/*Rows and column using radius definitions ends*/
+
+/*ARCS in PieCss represents Inner minor sectors - that is Rows and columns*/
+/*{Fluid arcs  default}
+*Use the #arc or .arc to create your inner minor containers - optional but useful*/
+#arc{display:inline-block;width:auto;height:auto;position:absolute;overflow:hidden;} /*OR*/ .arc{display:inline-block;width:auto;height:auto;position:absolute;overflow:hidden;}
+
+/*Fixed arcs - using the "#arc-fixed" or ".arc-fixed"*/
+#arc-fixed{display:block;position:fixed;z-index:1001;}
+@media only screen and (max-width:600px){#arc-fixed{min-width:100%;bottom:0%;}}
+@media only screen and (min-width:601px) and (max-width:993px){#arc-fixed{min-width:30%;left:5%;bottom:7%;}}
+/*OR*/
+.arc-fixed{display:block;position:fixed;z-index:1001;}
+@media only screen and (max-width:600px){.arc-fixed{min-width:100%;bottom:0%;}}
+@media only screen and (min-width:601px) and (max-width:993px){.arc-fixed{min-width:30%;left:5%;bottom:7%;}}
+/*Rows and column using arc definitions ends*/
+
+/*Unset position of elements - useful to prevent unintentional fold/render blocking*/
+.unset{position:unset !important;}
+/*Rows and column manipulation*/
+		
+.pie-overwrite{}/*Overwrite CSS for a radius/arc/row/container*/
+
+/*Hide and show (site/pagewide) containers/contents - Miscellaneous */
+.pie-tab {display:inline-block;text-decoration:inherit;} 
+.pie-hide{display:none!important;} 
+.pie-show,.pie-show-block{display:block!important;}
+.pie-show-inline-block{display:inline-block!important;}
+.pie-show-inline{display:inline!important;}
+
+/*Add responsiveness to a container*/
+.pie-responsive,.radius-responsive,.arc-responsive{display:block;overflow-x:auto;}
+
+/*Center an entire site/page*/
+.site-center{max-width:500px;margin:auto;padding:10px;background:#fff;}
+
+/*Vertical center alignment*/
+.vc-align{margin:auto;position:absolute;top:50%;-ms-transform:translateY(-50%);transform:translateY(-50%);}
+
+/*Displays a radius(inner row) in block*/
+.radius-block{display:block;width:100%;}
+
+/*Prevent user right-clicking any element within a radius(i.e row/container)*/
+.radius-disable-click{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+
+/*Prevent user right-clicking within entire site or within a class - will be deprecated in future release*/
+* .pie-disable-click{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+
+/*Use this to recover a radius (=>row or section of a row)*/
+.radius-recover{overflow:hidden;}
+
+/*Stretch a radius(=>row)*/
+.radius-stretch{margin-left:-16px;margin-right:-16px;}
+
+/*row measurements - Position -> Overflow -> Visibility*/
+.pie-pov {position:absolute;width:100%;height:0;overflow:hidden;visibility:hidden;}
+.pie-pov pre,blockquote,code,samp,quote {position:static;}
+
+/*Row contents >> applies in every container element really*/
+.radius-content,.row-auto{margin-left:auto;margin-right:auto;}
+.radius-content{max-width:980px;}
+.row-auto{max-width:1140px;}
+.contents-center{top:50%;left:50%;transform:translate(-50%,-50%);}
+.contents-bottom-center{bottom:0;left:50%;transform:translateX(-50%);}
+.contents-top-center{top:0;left:50%;transform:translateX(-50%);}
+.contents-top{top:0;}
+.contents-bottom{bottom:0;}
+.contents-left-center{left:40%;}
+.contents-top-left{top:0;left:16px;}
+.contents-bottom-left{bottom:0;left:16px;}
+.contents-right-center{right:40%;}
+.contents-top-right{top:0;right:16px;}
+.contents-bottom-right{bottom:0;right:16px;}
+@media(max-width:1205px){.row-auto{max-width:95%;}}
+/*Draw lines*/
+.hr-short{margin:auto; width:50%}
+.hr-long{margin:auto; width:100%}
+
+/*Create newspaper style columns-
+;You may also include .arc or #arc to inherit column-fill and column-count property for inner minor rows*/
+.radius-block .col-2{column-count:2;-webkit-column-count:2;-moz-column-count:2;column-fill:balance;-moz-column-fill:balance;} 
+.radius-block .col-3{column-count:3;-webkit-column-count:3;-moz-column-count:3;column-fill:balance;-moz-column-fill:balance;} 
+.radius-block .col-4{column-count:4;-webkit-column-count:4;-moz-column-count:4;column-fill:balance;-moz-column-fill:balance;} 
+.radius-block .col-5{column-count:5;-webkit-column-count:5;-moz-column-count:5;column-fill:balance;-moz-column-fill:balance;}
+/*Include any of the classes below to add gaps between columns
+*gaps can be small, medium or large gaps*/
+.col-gap-none{column-gap:-webkit-column-gap:0px;-moz-column-gap:0px;column-gap:0px;}
+.col-gap-xs{column-gap:-webkit-column-gap:5px;-moz-column-gap:5px;column-gap:5px;}
+.col-gap-s{column-gap:-webkit-column-gap:10px;-moz-column-gap:10px;column-gap:10px;}
+.col-gap-m{column-gap:-webkit-column-gap:20px;-moz-column-gap:20px;column-gap:20px;}
+.col-gap-l{column-gap:-webkit-column-gap:40px;-moz-column-gap:40px;column-gap:40px;}
+.col-gap-xl{column-gap:-webkit-column-gap:60px;-moz-column-gap:60px;column-gap:60px;}
+/*Reset newspaper style columns*/
+.radius-block .col-reset{column-count:initial;-webkit-column-count:initial;-moz-column-count:initial;column-fill:initial;-moz-column-fill:initial;column-gap:-webkit-column-gap:initial;-moz-column-gap:initial;column-gap:initial;}
+
+/*Rows and column manipulation ends*/
+
+/*Background image for any element - discourages a repeat*/
+/*Without animations*/
+.bg-image{background-image:url('../images/map-coming-soon.jpg'); background-repeat:no-repeat;
+  background-attachment:fixed; background-position:top; background-size:auto;}
+/*With animations*/
+.bg-image-animate{background-image:url('../images/map-coming-soon.jpg');background-attachment:fixed; background-position:top; background-size:auto;
+  background-repeat:no-repeat; animation:animatedBackground 40s linear infinite;}
+  @keyframes animatedBackground{from{background-position: 0 0;}
+	to{background-position: 100% 0;}}
+
+/*PIE PACKETS (Experimental);
+*can also be used to mark sections in your HTML document;
+*optional but useful*/
+.packets{position:absolute;top:-50px; bottom:-20px;left:0;right:0;overflow:hidden;}
+.packet{border-left:1px solid #ccc;position:absolute;top:0; bottom:0;}
+
+/*SIDEBARS
+*use together with the Float left and right classes to move sidebar left or right*/
+.pie-sidebar{height:100%;max-width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+@media (max-width:500px){.pie-sidebar{height:auto;max-width:100%;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}}
+
+/*OTHER IMPORTANT MANIPULATION CLASSES TO NOTE*/
+/*Float left and right
+*can also be used with any of the ".clear-?" classes to clear float
+*and can also be used with any box model classes to achieve desired*
+*box model effect*/
+.move-left{float:left!important;} .move-right{float:right!important;}
+
+/*Defining width-only*/
+/*Give maximum width only of 100% to any element or class
+*renders same across devices*/
+.sector-width{max-width:100% !important;}
+
+/*Give maximum width only of 90% to any element or class
+*renders same across devices*/
+.sector-width-90{max-width:90% !important;}
+
+/*Give maximum width only of 75% to any element or class*/
+.sector-width-75{max-width:75% !important;}
+
+/*Give maximum width only of 50% to any element or class*/
+.sector-width-50{max-width:50% !important;}
+
+/*Give maximum width only of 33.33% to any element or class*/
+.sector-width-33{max-width:33.33% !important;}
+
+/*Give maximum width only of 25% to any element or class*/
+.sector-width-25 {max-width:25% !important;}
+
+/*Give maximum width only of 20% to any element or class*/
+.sector-width-20 {max-width:20% !important;}
+@media screen(max-width:500px){
+	.sector-width-75{max-width:100%;} .sector-width-50{max-width:100%;}
+	.sector-width-33{max-width:100%;} .sector-width-25{max-width:100%;}
+	.sector-width-20{max-width:100%;}
+}
+/*End of width Definintion*/
+
+/*Radius widgets*/
+.radius-linewidget{position:relative;z-index:2;overflow:auto;}
+/*OTHER IMPORTANT MANIPULATION CLASSES ENDS*/
+ 
+/*Modal containers*/
+.radius-modal{z-index:3;display:none;padding-top:90px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.radius-modal-content{margin:auto;background-color:#fffafa;position:relative;padding:0;outline:0;width:600px}
+@media (max-width:600px){.radius-modal{z-index:3;display:none;padding-top:90px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.radius-modal-content{margin:auto;background-color:#fffafa;position:relative;padding:0;outline:0;width:600px}}
+/*USE THIS WITH MODAL TO CREATE HIDE Button
+ <span onclick="document.getElementById('id01').style.display='none'"
+      class="pie-btn element-disp-topright">&times;</span>
+*/
+
+/*ASPECT RATIOS*/
+/*Content aspect align - works outside aspect ratios as well, for all content placements*/
+.content-align{position:absolute;top:0;left:0;bottom:0;right:0;}
+.content-align-aspect{position:absolute;top:0;left:0;bottom:0;right:0;text-align:center;}
+
+/*Maintain aspect ratios for a radius(container/row)
+Use together with ".text-align-aspect" or ".content-align-aspect" class*/
+/*1:1 aspect ratio*/
+.aspect-ratio-11{background:inherit;position:relative;width:100%;padding-top:100%;}
+/*3:2 aspect ratio*/
+.aspect-ratio-32{background:inherit;position:relative;width:100%;padding-top:66.66%;}
+/*4:3 aspect ratio*/
+.aspect-ratio-43{background:inherit;position:relative;width:100%;padding-top:75%;}
+/*8:5 aspect ratio*/
+.aspect-ratio-85{background:inherit;position:relative;width:100%;padding-top:62.5%;}
+/*16:9 aspect ratio*/
+.aspect-ratio-169{background:inherit;position:relative;width:100%;padding-top:56.25%;}
+/*ASPECT RATIOS END*/
+
+/*Defining tables*/
+/*
+*You should first create a section named table-section to hold your table
+*Then name the section 'table-section' as a class
+*/
+.table-section{overflow-x:auto; /*will make table responsive*/}
+table, th, td {border:none;}
+table{width: 100%;display:table;}
+table.bordered > thead > tr, table.bordered > tbody > tr {border-bottom:1px solid #d0d0d0; border-collapse:collapse;}
+table.striped > tbody > tr:nth-child(odd){background-color:#f2f2f2;}
+table.hoverable > tbody > tr{-webkit-transition:background-color .25s ease;-moz-transition:background-color .25s ease;
+-o-transition: background-color .25s ease;-ms-transition:background-color .25s ease;transition:background-color .25s ease;}
+table.hoverable > tbody > tr:hover{background-color:#f2f2f2;}
+table.centered thead tr th, table.centered tbody tr td {text-align:center;}
+table.left-aligned thead tr th, table.left-aligned tbody tr td {text-align:left;}
+table.right-aligned thead tr th, table.right-aligned tbody tr td {text-align:right;}
+thead {border-bottom:1px solid #d0d0d0;}
+td,th {padding:15px 5px;display:table-cell;text-align:left;vertical-align:middle;border-radius:2px; }
+@media only screen and (max-width:990px){
+table.responsive {width:100%;border-collapse:collapse;border-spacing:0;display:block;position:relative;/* will arrange borders */ }
+table.responsive th, table.responsive td {margin:0;vertical-align:top;}
+table.responsive th{text-align:left;} table.responsive thead{display:block;float:left;}
+table.responsive thead tr {display:block;padding:0 10px 0 0;}
+table.responsive thead tr th::before {content:"\00a0";}
+table.responsive tbody {display:block;width:auto;position:relative;overflow-x:auto;white-space:nowrap;}
+table.responsive tbody tr {display:inline-block;vertical-align:top;}
+table.responsive th {display:block;text-align:right;}table.responsive td {display:block;min-height:1.25em;text-align:left;}
+table.responsive tr {padding:0 10px;}table.responsive thead {border:0;border-right:1px solid #d0d0d0;}
+table.responsive.bordered th {border-bottom:0;border-left:0;}
+table.responsive .bordered td {border-left:0;border-right:0;border-bottom:0;}
+table.responsive.bordered tr {border:0;}
+table.responsive .bordered tbody tr {border-right:1px solid #d0d0d0;}}
+/*Table caption*/
+.bottom-caption{caption-side:bottom;} .top-caption{caption-side:top;}
+/*Table definitions end*/
+
+/*FLIP BOX
+*You can use ".pie-flip-back" and ".pie-flip-front" together with any color class
+*to produce a different background color and text color*/
+.pie-flip{background-color:transparent;width:auto;height:auto;border:1px solid #f1f1f1;perspective:1000px;}
+.pie-flip-front{background:#808080;color:#fff;}
+.pie-flip-front,.flip-flip-back{position:absolute;max-width:100%;height:100%;backface-visibility:hidden;}
+.pie-flip-inner{position:relative;width:100%;height:100%;text-align:center;transition:transform 0.8s;transform-style:preserve-3d;}
+/*Flip box => horizontal
+*Include the below code to the above three classes to do a horizontal flip*/
+.pie-flip-back-horizontal{background-color:#4169E1;color:#fff;transform:rotateY(180deg);}
+.pie-flip-horizontal:hover .pie-flip-inner-horizontal {transform: rotateY(180deg);}
+/*Flip box => vertical
+*Include the below codes to the first three classes to do a vertical flip*/
+.pie-flip-back-vertical{background-color:#4169E1;color:#fff;transform:rotateX(180deg);}
+.pie-flip-vertical:hover .pie-flip-inner-vertical {transform: rotateX(180deg);}
+/*end of the flip box*/
+
+/*Footer section >> works with any container element*/
+footer.page-footer{margin-top:20px;padding-top:20px;background-color: #ee6e73;}
+@media(max-width:610px){
+footer.page-footer{margin-top:10px;padding-top:10px;background-color: #ee6e73;}}
+
+footer.page-footer .footer-copyright{overflow:hidden;height:50px;line-height:50px;
+color: #ffffff; background-color: #333333;}
+@media(max-width:610px){
+footer.page-footer .footer-copyright{overflow:hidden;height:25px;line-height:25px;
+color: #ffffff; background-color: #333333;}}
+/*footer ends*/
+
+/*Zoom contents on hover*/
+.pie-zoom{padding:40px;background-color:inherit;transition:transform .2s;width:200px;height:200px;margin:0 auto;}
+.pie-zoom:hover{transform:scale(1.5);}
+
+/*Give all hyperlinks a default title attribute when none is present;
+*useful for SEO;
+*to overwrite, simply specify a title attribute/value of your choice*/
+a[title=""]{content:"visit my link";}
+
+/*IMAGES*/
+img{vertical-align:middle;} .pie-image{max-width:100%;height:auto;}
+
+/*contain images*/
+img.bg-image, img.bg-image-animate{width:100%;background-repeat:no-repeat;background-size:100% 100%;}
+
+/*Give all images a default title attribute when none is present;
+*useful for SEO;
+*to overwrite, simply specify a title attribute/value of your choice*/
+img[title=""]{content:"My image";} img[alt=""]{content:"my image";}
+img[description=""]{content:"This is an image used on my website";}
+
+/*Cut off the sides of an image,and fill in any spaces:*/
+.arc img{object-fit:fill; /*this wil preserve your intended aspect ratio*/}
+
+/*Image gallery - using a section or any container tag really*/
+section.gallery {width:200px;margin:5px;border:1px solid #ccc;float:left;}
+section.gallery:hover{border:1px solid #777;} section.gallery img{width:100%;height:auto;}
+section.desc {text-align:center;padding:14px; /*image description*/}
+@media only screen and (max-width:600px){section.gallery{width:100%;border:1px solid #ccc;}
+	section.desc {text-align:center;padding:9px; /*image description*/}
+	.clearfix:after{content: "";display:table;clear:both;}}
+
+
+/*Image slider*/
+.img-slider{display:none;width:100%;}/*this will be used with PieJs to slide the images*/
+
+/*Use on an image tag before a <p> or any element whose content will overlay the image*/
+.image-behind-text{position:absolute;left:0px;top:0px;z-index:-1;}
+/*Images ends*/
+
+/*Video and audio container - can also use the aspect ratio classes for this
+; here, the aspect ratio 16:9 class was used for the arc-multimedia class*/
+.arc-multimedia{position:relative;padding-top:30px;padding-bottom:56.25%;height:0;overflow:hidden;}
+.arc-multimedia iframe, .arc-multimedia object, .arc-multimedia embed{position:absolute;top:0;left:0;width:100%;height:100%;}
+
+/*Progress*/
+.progress{position:relative;height:auto;display:block;width:100%;background-color:#000080;border-radius:3px;margin:1px 0 2px 0;overflow:hidden;}
+
+/*BOX MODEL AND ANIMATIONS*/
+
+/*PieBox - better replacement for sliders and the slider section
+*Can go with any color and text classes*/
+.piebox{position:relative;height:100vh;max-width:100%;display:flex;flex-wrap:wrap;display:-webkit-flex;background:#000;}
+.piebox-screen{position:relative;justify-content:flex-end;align-items:flex-end;flex-grow:2;overflow:hidden;display:flex;transition:1s;}
+.piebox-screen img{background-size:cover; background-repeat:no-repeat; background-position:center;}
+.piebox:hover .piebox-screen{opacity:0.1s;}
+.piebox .piebox-screen:hover{flex-grow:5;opacity:1;}
+/*contents of the piebox*/
+.piebox .piebox-screen .piebox-content{position:absolute;flex:25%;height:auto;background:#fff;padding:40px;box-sizing:border-box;transform:translateX(100%);transition:0.5s;text-align:justify;}
+.piebox .piebox-screen:hover .piebox-content{transform:translateX(0);transition-delay:0.5s;}
+.piebox .piebox-screen .piebox-content h1,h2,h3,h4,h5,h6{margin:0;padding:0;text-transform:uppercase;font-size:30px;color:#ed363a;}
+.piebox .piebox-screen .piebox-content p,span{margin:0;padding:0;}
+.piebox .piebox-screen .piebox-content img{margin:0;padding:0;max-width:100%;height:auto;}
+@media(max-width:990px){
+	.piebox .piebox-screen .content{position:absolute;flex:50%;padding:14px;height:auto;background:#fff;box-sizing:border-box;transform:translateX(100%);transition:0.5s;text-align:justify;}
+}
+@media(max-width:600px){
+	.piebox{position:relative;height:100vh;display:flex;flex-wrap:wrap;display:-webkit-flex;background:#000;flex-direction:column;}
+	.piebox .piebox-screen{position:relative;justify-content:flex-end;align-items:flex-end;flex-grow:2;overflow:hidden;display:flex;transition:1s;flex-direction:column;}
+	.piebox .piebox-screen .piebox-content{position:absolute;flex:50%;padding:14px;height:auto;background:#fff;box-sizing:border-box;transform:translateX(100%);transition:0.5s;text-align:justify;}
+}
+/*PieBox ends*/
+
+
+/*Grid (4X4) Model - Can go with any color and text classes*/
+/*Block grid*/
+.pie-grid-block{display:grid; grid-template-columns:auto auto auto auto; grid-template-rows:auto auto auto auto;
+        padding:10px;grid-gap:0px 0px;}
+.pie-grid-block .grid-content{padding:30px;font-size:20px;}
+.pie-grid-block > section{padding:20px 0px; font-size:20px;}
+
+/*Inline grid*/
+.pie-grid-inline{display:grid; grid-template-columns:auto auto auto auto; grid-template-rows:auto auto auto auto;
+        padding:10px;grid-gap:0px 0px;}
+.pie-grid-inline .grid-content{padding:30px;font-size:20px;}
+.pie-grid-inline > section{padding:20px 0px; font-size:20px;}
+/*Grid model ends*/
+
+/*Fade in*/
+.fadein{opacity:0;transform-origin:0 50%;}
+
+/*Element selected*/
+.element-selected{background:#d9d9d9;}
+
+/*Transparent and hover*/
+.element-transparent,.element-transparent-hover:hover{background-color:transparent!important;}
+.element-hover-none:hover{box-shadow:none!important;}
+
+/*Extend an entire HTML element - use together with any color class
+*for background and text colors*/
+/*Extend element width over a  small space*/
+#extend-width-sm{width:100px;height:100px;-webkit-transition:width 2s;transition:width 2s;}
+#extend-width-sm:hover{width:300px;}
+/*Extend element height over a small space*/
+#extend-height-sm{width:100px;height:100px;-webkit-transition:height 2s;transition:height 2s;}
+#extend-height-sm:hover{height:300px;}
+/*Transition element width and height over a small space*/
+#extend-width-height-sm{width:100px;height:100px;-webkit-transition:width 2s, height 2s;transition:width 2s, height 2s;}
+#extend-width-height-sm:hover{width:300px;height:300px}
+
+/*Extend element width over a  large space*/
+#extend-width-lg{width:200px;height:200px;-webkit-transition: width 2s;transition:width 2s;}
+#extend-width-lg:hover{width:600px;}
+/*Extend element height over a large space*/
+#extend-height-lg{width:200px;height:200px;-webkit-transition:height 2s;transition:height 2s;}
+#extend-height-lg:hover{height:600px;}
+/*Extend element width and height over a large space*/
+#extend-width-height-lg{width:200px;height:200px;-webkit-transition:width 2s,height 2s;transition:width 2s,height 2s;}
+#extend-width-height-lg:hover{width:600px;height:600px}
+
+/*Extend element width over entire page*/
+#extend-width-fill{width:200px;height:200px;-webkit-transition:width 2s;transition:width 2s;}
+#extend-width-fill:hover{width:100%;}
+/*Extend element height over entire page*/
+#extend-height-fill{width:200px;height:200px;-webkit-transition:height 2s;transition:height 2s;}
+#extend-height-fill:hover{height:100%;}
+/*Extend element width and height over a entire page*/
+#extend-width-height-fill{width:200px;height:200px;-webkit-transition:width 2s,height 2s;transition:width 2s,height 2s;}
+#extend-width-height-fill:hover{width:100%;height:100%;}
+
+@media(max-width:500px){
+	/*Extend element width over a small space*/
+#extend-width-sm{width:100px;height:100px;-webkit-transition:width 2s;transition:width 2s;}
+#extend-width-sm:hover{width:100%;clear:both;}
+/*Extend element width over a small space*/
+#extend-height-sm{width:100px;height:100px;-webkit-transition:height 2s;transition:height 2s;}
+#extend-height-sm:hover{height:auto;clear:both;}
+/*Extend element width and height over a small space*/
+#extend-width-height-sm{width:100px;height:100px;-webkit-transition:width 2s,height 2s;transition:width 2s,height 2s;}
+#extend-width-height-sm:hover{width:100%;height:auto;}
+
+/*Extend element width over a large space*/
+#extend-width-lg{width:200px;height:200px;-webkit-transition:width 2s;transition:width 2s;}
+#extend-width-lg:hover{width:100%;clear:both;}
+/*Extend element width over a large space*/
+#extend-height-lg{width:200px;height:200px;-webkit-transition:height 2s;transition:height 2s;}
+#extend-height-lg:hover{height:auto;clear:both;}
+/*Extend element width and height over a large space*/
+#extend-width-height-lg{width:200px;height:200px;-webkit-transition:2s;transition:2s;}
+#extend-width-height-lg:hover{width:100%;height:auto;clear:both;}
+}
+
+/*Extend + Transform an entire HTML element - use together with any color class
+*for background and text colors*/
+/*Transform element width over a small space*/
+#transform-width-sm{width:100px;height:100px;-webkit-transition:width 2s height 2s -webkit-transform 2s;transition:width 2s height 2s, transform 2s;}
+#transform-width-sm:hover{width:300px;-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+/*Transform element height over a small space*/
+#transform-height-sm{width:100px;height:100px;-webkit-transition:height 2s, -webkit-transform 2s;transition:height 2s,transform 2s; }
+#transform-height-sm:hover{height:300px;-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+/*Transform horizontally/vertically over a small space*/
+#transform-width-height-sm{width:100px;height:100px;-webkit-transition:width 2s, height 2s, -webkit-transform 2s;transition:width 2s, height 2s, transform 2s;}
+#transform-width-height-sm:hover{width:300px;height:300px;-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+
+/*Transform element width over a large space*/
+#transform-width-lg{width:200px;height:200px;-webkit-transition:width 2s height 2s -webkit-transform 2s;transition:width 2s height 2s,transform 2s;}
+#transform-width-lg:hover{width:600px;-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+/*Transform element height over a large space*/
+#transform-height-lg{width:200px;height:200px;-webkit-transition:width 2s height 2s -webkit-transform 2s;transition:width 2s height 2s,transform 2s;}
+#transform-height-lg:hover{height:600px;-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+/*Transform element width and height over a large space*/
+#transform-width-height-lg{width:200px;height:200px;-webkit-transition:width 2s height 2s -webkit-transform 2s;transition:width 2s height 2s,transform 2s;}
+#transform-width-height-lg:hover{width:600px;height:600px;-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+
+/*Transform element width over entire page*/
+#transform-width-fill{width:200px;height:200px;-webkit-transition:width 2s height 2s -webkit-transform 2s;transition:width 2s height 2s,transform 2s;}
+#transform-width-fill:hover{width:100%;-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+/*Transform element height over a entire page*/
+#transform-height-fill{width:200px;height:200px;-webkit-transition:width 2s height 2s -webkit-transform 2s;transition:width 2s height 2s,transform 2s;}
+#transform-height-fill:hover{height:100%;-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+/*Transform element width and height over a entire page*/
+#transform-width-height-fill{width:200px;height:200px;-webkit-transition:width 2s height 2s -webkit-transform 2s;transition:width 2s height 2s,transform 2s;}
+#transform-width-height-fill:hover{width:100%;height:100%;-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+
+@media(max-width:500px){
+/*Transform elements over a small space*/
+#transform-width-sm{width:100px;height:100px;-webkit-transition:width 2s;transition:width 2s;}
+#transform-width-sm:hover{width:100%;clear:both;}
+/*Transform element height over a small space*/
+#transform-height-sm{width:100px;height:100px;-webkit-transition:width 2s;transition:width 2s;}
+#transform-height-sm:hover{height:auto;clear:both;}
+/*Transform element width and height over a small space*/
+#transform-width-height-sm{width:100px;height:100px;-webkit-transition:width 2s;transition:width 2s;}
+#transform-width-height-sm:hover{width:100%;height:auto;}
+
+/*Transform element width over a large space*/
+#transform-width-lg{width:200px;height:200px;-webkit-transition:width 2s;transition:width 2s;}
+#transform-width-lg:hover{width:100%;clear:both;}
+/*Transform element height over a large space*/
+#transform-height-lg{width:200px;height:200px;-webkit-transition:width 2s;transition:width 2s;}
+#transform-height-lg:hover{height:auto;clear:both;}
+/*Transform element width and height over a large space*/
+#transform-width-height-lg{width:200px;height:200px;-webkit-transition:width 2s;transition:width 2s;}
+#transform-width-height-lg:hover{width:100%;height:auto;clear:both;}
+}
+
+/*Animation begins*/
+/*Add box shadow*/
+.element-box,.element-box-hover:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);}
+/*Spin elements*/
+.element-animate-spin{animation:element-spin 2s infinite linear}@keyframes element-animate-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+/*fade elements*/
+.element-animate-fading{animation:fading 10s infinite}@keyframes element-animate-fading{0%{opacity:0}50%{opacity:1;}100%{opacity:0;}}
+/*create opacity on elements*/
+.element-animate-opacity{animation:opacity 0.8s}@keyframes element-animate-opacity{from{opacity:0;} to{opacity:1;}}
+.element-opacity,.element-hover-opacity:hover{opacity:0.60;}.element-opacity-off,.element-hover-opacity-off:hover{opacity:1;}
+.element-opacity-fill{opacity:0.25; filter: Alpha(opacity=25);/*For IE8 and earlier*/}.element-opacity-part{opacity:0.75;filter: Alpha(opacity=75);/*For IE8 and earlier*/}
+/*Filters - grayscale or greyscale and sepia*/
+.element-greyscale-fill,.element-grayscale-fill,.element-hover-greyscale:hover,.element-hover-grayscale:hover{filter:grayscale(100%);}
+.element-greyscale-part,.element-grayscale-part{filter:grayscale(75%);}.element-greyscale-part,.element-grayscale-part{filter:grayscale(50%);}
+.element-sepia{filter:sepia(70%);}.element-sepia-fill,.element-hover-sepia:hover{filter:sepia(100%)}.element-sepia-part{filter:sepia(50%);}
+/*Animation Direction*/
+.element-animate-top{position:relative;animation:animatetop 0.4s}@keyframes element-animate-top{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.element-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes element-animate-bottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.element-animate-left{position:relative;animation:animateleft 0.4s}@keyframes element-animate-left{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.element-animate-right{position:relative;animation:animateright 0.4s}@keyframes element-animate-right{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+/*Zoom elements*/
+.element-animate-zoom{animation:animatezoom 0.6s;}@keyframes element-animate-zoom{from{transform:scale(0)} to{transform:scale(1)};}
+/*use to add animation effect to any element*/
+/*For ease-in-out*/
+.arc-animate-element{-webkit-transition:0.4s ease-in-out;transition:0.4s ease-in-out;}
+.element-animate-input{transition:width 0.4s ease-in-out;}.element-animate-input:focus{width:100%!important;}
+/*For linear transitions*/
+.arc-animate-element-linear{-webkit-transition:0.4s linear;transition:0.4s linear;}
+/*Box model and animations end*/
+
+/*FORMS AND BUTTONS
+*optionally, use together with any color, arc-animate-element and round class*/
+input{width:100%;padding:12px 20px;margin:8px 0;box-sizing:border-box;}
+.input-width:focus{width:100%; /*must use together with anycolor, arc-animate-element class*/}
+textarea{width:100%;height:150px;padding:12px 20px;margin:8px;box-sizing:border-box;}
+.no-resize{resize:none !important;}
+select{width:100%;height:auto;padding:16px 20px;}
+@media and (max-width:600px){input{width:100%;padding:6px 10px;margin:4px 0;box-sizing:border-box;}
+.input-width:focus{width:100%; /*must use together with the arc-animate-element class*/}
+textarea{width:100%;height:70px;padding:6px 10px;box-sizing:border-box;}
+select{width:100%;padding:8px 10px;}}
+
+/*Buttons => use together with a color class for color effect*/
+button,input[type=button],input[type=submit],input[type=reset],.pie-btn,.radius-btn{border:none;display:inline-block;
+margin:4px 2px;padding:8px 16px;border-radius:4px;vertical-align:middle;overflow:hidden;text-decoration:none;
+text-align:center;cursor:pointer;white-space:nowrap;}
+@media and (max-width:600px){button,input[type=button],input[type=submit],input[type=reset],.pie-btn,.radius-btn{border:none;display:inline-block;
+margin:4px 2px;padding:5px 9px;border-radius:4px;vertical-align:middle;overflow:hidden;text-decoration:none;
+text-align:center;cursor:pointer;white-space:nowrap;}}
+.pie-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);}
+.pie-disabled,.pie-disabled:disabled.pie-btn:disabled,.radius-btn:disabled{cursor:not-allowed;opacity:0.3;}
+.pie-btn.pie-disabled:hover,.pie-btn:disabled:hover{box-shadow:none;}
+.radius-btn:hover{color:#000!important;background-color:#c4c4c4!important;}
+.arc .button{white-space:normal;}
+/*Disable user select effect on button*/
+.pie-btn-select,.radius-btn-select{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+
+/*If you do not wish to import PieCSS color and text classes for your buttons, 
+*you may use this default button. One class rules all - expected to be removed in future releases*/
+#button-pie{font:normal 15px arial;border:0;background: black;color:white;border-radius:5px;padding:5px 15px;
+height:35px;margin-bottom:10px;}
+@media(max-width:500px){
+	#button-pie{font:normal 8px arial;border:0;background:black;color:white;border-radius:5px;padding:3px 9px;
+height:15px;margin-bottom:5px;}
+}
+/*Buttons end*/
+/*Forms end*/
+
+/*Tooltip*/
+.pie-tooltip{padding:10px 8px;font-size:1rem;z-index:2000;background-color:transparent;border-radius:2px;
+color:#000;min-height:36px;line-height:1rem;opacity:0;display:none;position:absolute;left:0;top:0;overflow:hidden;}
+
+/*Element Display Modes with PieCSS*/
+.element-disp-top,.display-bottom{position:fixed;width:100%;z-index:1;}
+.element-disp-top{top:0;}.element-disp-bottom{bottom:0;}
+.element-disp-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background:inherit;z-index:2;}
+.element-disp-topleft{position:absolute;left:0;top:0;}.element-disp-topright{position:absolute;right:0;top:0;}
+.element-disp-bottomleft{position:absolute;left:0;bottom:0;}.element-disp-bottomright{position:absolute;right:0;bottom:0;}
+.element-disp-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);}
+.element-disp-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);}
+.element-disp-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%);}
+.element-disp-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%);}
+.element-disp-bottom-middle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%);}
+.display-block{display:block;} .display-hover-block:hover{display:block;}
+.element-disp-container:hover span.element-disp-hover:hover{display:inline-block;}
+.element-disp-none{display:none;} .element-disp-position{position:absolute;}
+
+/*Box with shadows*/
+.radius.disp-shadow-black{border:1px solid;box-shadow:5px 10px;}
+.radius.disp-shadow-grey{border:1px solid;box-shadow: 5px 10px #888888;}
+.radius.disp-shadow-gray{border:1px solid;box-shadow: 5px 10px #888888;}
+
+/*Circle and rounded corner displays: can also be used to create badges*/
+.circle{border-radius:50%;}
+.round-s{border-radius:2px;} .round-m{border-radius:4px;}
+.round-l{border-radius:8px;}.round-xl{border-radius:16px;}.round-xxl{border-radius:32px;}
+
+/*Clear => Prevent Elements Floating on any side(s)*/
+.clear-none{clear:none !important;} .clear-both{clear:both !important;}
+.clear-left{clear:left !important;} .clear-right{clear:right !important;}
+/*Inherit float property from a radius*/
+.arc .clear-both{clear:inherit !important;}
+/*Reset the float property of elements*/
+.reset-clear{clear:initial !important;}
+/*Clear ends*/
+
+/*Working with Backgrounds*/
+/*background clips*/
+.bg-clip-dotty{background-clip:border-box;}
+.bg-clip-padbox{background-clip:padding-box;}
+.bg-clip-contentbox{background-clip:content-box;}
+.arc.bg-clip-contentbox{background-clip:inherit;}
+/*Reset background clips*/
+.bg-clip{background-clip:initial !important;}
+
+/*Line background in any sectors*/
+.pie-linebg{position:absolute;left:0;right:0;top:0;bottom:0;z-index:0;}
+
+
+/*MARGIN; PADDING; BORDER*/
+/*No margin; No padding; No border*/
+.nomargin{margin:0 !important;} .nopadding{padding:0 !important;} .noborder{border:none !important;}
+/*margin; small - medium - large*/
+.margin-s{margin:4px!important;}.margin-m{margin:9px!important;}.margin-l{margin:16px!important;} .margin-xl{margin:32px!important;}
+.margin-top-s{margin-top:4px!important;}.margin-top-m{margin-top:9px!important;}.margin-top-l{margin-top:16px!important;}
+.margin-top-xl{margin-top:32px!important;}
+.margin-bottom-s{margin-bottom:4px!important;}.margin-bottom-m{margin-bottom:9px!important;}.margin-bottom-l{margin-bottom:16px!important;}
+.margin-bottom-xl{margin-bottom:32px!important;}
+.margin-left-s{margin-left:4px!important;}.margin-left-m{margin-left:9px!important;}.margin-left-l{margin-left:16px!important;}
+.margin-left-xl{margin-left:32px!important;}
+.margin-right-s{margin-right:4px!important;}.margin-right-m{margin-right:9px!important;}.margin-right-l{margin-right:16px!important;}
+.margin-right-xl{margin-right:32px!important;}
+/*Padding; small - medium - large*/
+.padding-s{padding:4px!important;}.padding-m{padding:9px!important;}.padding-l{padding:16px!important;}
+.padding-xl{padding:32px!important;}
+.padding-top-s{padding-top:4px!important;}.padding-top-m{padding-top:9px!important;}.padding-top-l{padding-top:16px!important;}
+.padding-top-xl{padding-top:32px!important;}
+.padding-bottom-s{padding-bottom:4px!important;}.padding-bottom-m{padding-bottom:9px!important;}.padding-bottom-l{padding-bottom:16px!important;}
+.padding-bottom-xl{padding-bottom:32px!important;}.
+.padding-left-s{padding-left:4px!important;}.padding-left-m{padding-left:9px!important;}.padding-left-l{padding-left:16px!important;}
+.padding-left-xl{padding-left:32px!important;}
+.padding-right-s{padding-right:4px!important;}.padding-right-m{padding-right:9px!important;}.padding-right-l{padding-right:16px!important;}
+.padding-right-xl{padding-right:32px!important;}
+/*Border; small - medium - large
+*You can use this with any color class*/
+.border-s{border:3px solid #ccc;}.border-m{border:9px solid #ccc;}.border-l{border:16px solid #ccc;}
+.border-xl{border:32px solid #ccc;}
+.border-top-s{border-top:3px solid #ccc;}.border-top-m{border-top:9px solid #ccc;}.border-top-l{border-top:16px solid #ccc;}
+.border-top-xl{border-top:32px solid #ccc;}
+.border-bottom-s{border-bottom:3px solid #ccc;}.border-bottom-m{border-bottom:9px solid #ccc;}.border-bottom-l{border-bottom:16px solid #ccc;}
+.border-bottom-xl{border-bottom:32px solid #ccc;}
+.border-left-s{border-left:3px solid #ccc;}.border-left-m{border-left:9px solid #ccc;}.border-left-l{border-left:16px solid #ccc;}
+.border-left-xl{border-left:32px solid #ccc;}
+.border-right-s{border-right:3px solid #ccc;}.border-right-m{border-right:9px solid #ccc;}.border-right-l{border-right:16px solid #ccc;}
+.border-right-xl{border-right:32px solid #ccc;}
+/*Display Modes end here*/
+
+
+/*Introducing the chord(ch) class(Experimental: Do not use)*/
+.ch{font:inherit;}
+.ch-composing{border-bottom:2px solid;}
+.ch-m-click .ch-string{color:#CD853F;}
+.ch-s-default .ch-error{color:#f00;}
+.ch-invalidchar{color: #f00;}
+.ch-responsive{display:inherit;overflow:auto;}
+
+/*Main CSS ends here*/
+
+/*;
+* NOTE TO USER
+*The pie.css software contains some styles that are related to the internal workings of a document.
+*You may not touch them unless you know what you do.
+*/
+/*;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;*/
