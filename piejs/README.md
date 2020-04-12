@@ -20,5 +20,4 @@ ISSUE REPORTS
 Reporting issues for now can be done through this Github platform.
 Report an issue: https://eugyenoch.github.io/pie/
 
-**PieJS is an official release of the PieJS framework and is currently in Beta but we implore your usage, reporting and collaboration of the framework 
-as we continue to work out a stable release of this software. 
+**PieJS is an official release of the PieJS framework and is currently in Beta but we implore your usage, reporting and collaboration of the framework as we continue to work out a stable release of this software. 
