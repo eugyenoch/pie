@@ -22,5 +22,12 @@ IMPLEMENTATION OF SCSS
 For this version of pie.css, the Scss preprocessor have been implemented in the chunks(individual stylesheets for the different presentation systems) and not in the combine(combine and combine-minified) pie.css file. 
 **To use Scss, Sass will have to be downloaded and installed on local machine.
 
+LICENSING
+The PieCSS framework is licensed under the MIT license.Read more about the MIT license here: https://github.com/eugyenoch/pie/blob/master/LICENSE
+
+ISSUE REPORTS
+Reporting issues for now can be done through the Github platform.
+Report an issue: https://eugyenoch.github.io/pie/
+
 
 **Piecss is in Beta right now and expected to be out of Beta very soon and fast!!! We are making the most of this season to accomplish this.
