@@ -1,0 +1,12 @@
+# Add 'repo' label to any root file changes
+repo:
+  - ./*
+  
+# Add 'JSchanges' to any changes within 'piejs' folder or any subfolders
+JSchanges:
+  - piejs/**/*
+  
+# Add 'CSSchanges' to any changes within 'piejcss' folder or any subfolders
+CSSchanges:
+  - piecss/**/*
+
