@@ -13,8 +13,9 @@ Every version of the pie framework for piecss and piejs is available for securit
 
 ## Reporting a Vulnerability
 
-Use the section on Github marked for issues and complaints to report complaints.
+Use the section on Github marked for issues and complaints or message me directly to report complaints.
 
+**Alternative and efficient as well methods**
 In addition, you can write an email to enochdavid8@gmail.com or message facebook @eugyenoch
 to report a complaint or suggest a new feature.
 Expect replies as quickly as possible; we can't put a finger on exactness but we promise in about 3days tops.
