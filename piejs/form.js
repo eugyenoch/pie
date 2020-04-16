@@ -1,3 +1,16 @@
+/*;
+* PieJS v1.1.0 ()
+* Form.js for PieJS
+* Copyright 2020 by Eugy Enoch
+* For The Pie fameworks and Library; 
+* https://eugyenoch.github.io/pie/
+* Released under the MIT License.
+*
+*See the readme file associated with this software for licencing and contact.
+*/
+
+"use strict";
+
 /*
 ;Add some basic funsctionalities to forms
 ;such as submit and reset
@@ -38,6 +51,11 @@ frm.ableView=function(){
 //Convert from singleselect to multiselect mode and allow multiselect
 frm.multipleSelect=function(){
   document.getElementById("formSelect").multiple=true
+};
+
+//Convert to multiselect mode - change size to 2
+frm.sizeTwo=function(){
+  document.getElementById("formSelect").size = 2
 };
 
 //Convert to multiselect mode - change size to 4
