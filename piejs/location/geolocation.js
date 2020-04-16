@@ -1,3 +1,14 @@
+/*;
+* PieJS v1.1.0 ()
+* geolocation.js for Pie
+* Geolocation plugin for webmasters
+* Copyright 2020 by Eugy Enoch
+* For The Pie fameworks and Library; 
+* https://eugyenoch.github.io/pie/
+* Released under the MIT License.
+*
+*See the readme file associated with this software for licencing and contact.
+*/
 
 var locationOptions = {
 	enableHighAccuracy: true,
