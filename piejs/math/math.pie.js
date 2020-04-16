@@ -1,6 +1,7 @@
 /*
 *Javascript developed originally for use in the Eugy calculator software program
-*Developed by David U. Enoch in the year of the Lord 2020.
+*and now included in the PieJS build
+*Developed by David U. Enoch(Eugy Enoch) in the year of the Lord 2020.
 *
 *Permission is hereby granted, free of charge, to any person obtaining a copy
 *of this software and associated documentation files (the "Software"), to deal
@@ -15,11 +16,11 @@
 *Please See the readme file associated with this file
 *for licencing and contact information.
 */
-"use strict"
+"use strict";
 
 var calc={};
 
-//Off function - Expect more on this function
+//Off function - Expect more on this function in future build
 calc.off=function(){
 	setTimeout(offButton,1000)
 	setTimeout(offButton2,2000)
