@@ -1,3 +1,14 @@
+/*;
+* PieJS v1.1.0 ()
+* redirect.js; plugin for webmasters
+* Copyright 2020 by Eugy Enoch
+* For The Pie fameworks and Library; 
+* https://eugyenoch.github.io/pie/
+* Released under the MIT License.
+*
+*See the readme file associated with this software for licencing and contact.
+*/
+
 /*GENERAL INSTRUCTIONS
 ;Place this script at head section for a general web page redirect.
 ;Place in sections for sectional redirect(s).
