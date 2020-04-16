@@ -1,9 +1,12 @@
-/*
- * PieCSS v1.0.0 ()
- * typo.pie.css 
- * Copyright 2020 Eugy Enoch (https://eugyenoch.github.io/)
- * For PieCSS
- * MIT License 
+/*;
+* PieCSS v1.1.0 ()
+* typo.pie.css
+* Copyright 2020 by Eugy Enoch 
+* https://eugyenoch.github.io/pie/
+* For Pie framework and library; 
+* Released under the MIT License
+*
+*See the readme file associated with this software for licencing and contact.
  */
 
 /*The 'myPie' word attached to a class or id is used to allow user add custom values 
@@ -129,12 +132,6 @@
 @font-face{font-family:"abeezee italic";src:url('../include/font/aBeeZee/ABeeZee-Italic.ttf');font-weight:italic;}
 @font-face{font-family:"abeezee regular";src:url('../include/font/aBeeZee/ABeeZee-Regular.ttf');font-weight:normal;}
 
-/*Declaring the expressway-free fontset - please refer to documentation on this font*/
-@font-face{font-family:"expressway rg";src:url('../include/font/expressway-free/expressway rg.ttf');font-weight:normal;}
-
-/*Declaring the good-times fontset - please refer to documentation on this font*/
-@font-face{font-family:"good times";src:url('../include/font/expressway-free/good times rg.ttf');font-weight:normal;}
-
 /*Declaring the homoarak fontset - please refer to documentation on this font*/
 @font-face{font-family:homoarak;src:url('../include/font/homoarak/HOMOARAK.TTF');font-weight:normal;}
 
@@ -142,9 +139,6 @@
 @font-face{font-family:"loopy italics";src:url('../include/font/loopy/LOOPY_IT.TTF');font-weight:italic;}
 @font-face{font-family:loopy;src:url('../include/font/loopy/LOOPY___.TTF');font-weight:normal;}
 
-/*Declaring the mexcellent fontset - please refer to documentation on this font*/
-@font-face{font-family:"mexcellent 3d";src:url('../include/font/mexcellent/mexcellent 3d.ttf');font-weight:normal;}
-@font-face{font-family:"mexcellent rg";src:url('../include/font/mexcellent/mexcellent rg.ttf');font-weight:normal;}
-
 /*Declaring the trashco fontset - please refer to documentation on this font*/
 @font-face{font-family:trashco;src:url('../include/font/trashco/trashco.ttf');font-weight:normal;}
+/*PIE TYPOGRAPHY CSS ENDS*/
