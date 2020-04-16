@@ -1,8 +1,11 @@
 /*;
- * PieCSS v1.0.0 ()
- * Copyright 2020 by Eugy Enoch
- * For PieCSS,Pie.css
- * MIT License (https://raw.github.com/)
+* PieCSS v1.1.0 ()
+* Copyright 2020 by Eugy Enoch 
+* https://eugyenoch.github.io/pie/
+* For Pie framework and library; 
+* Released under the MIT License
+*
+*See the readme file associated with this software for licencing and contact.
  */
 
 /*CSS RESET AND BROWSER INITIALIZING BEGINS*/
@@ -131,6 +134,7 @@ p{margin-top:0;margin-bottom:auto;} mark{background-color:#E6E6FA;padding:10px;}
 /*Use the #radius or .radius to create your inner major containers - optional*/
 #radius{position:absolute;overflow:hidden;padding-top:10px;padding-bottom:10px;display:inline-block;} /*OR*/ .radius{position:absolute;overflow:hidden;padding-top:10px;padding-bottom:10px;display:inline-block;}
 
+#pie:after,#radius:after,.pie:after,.radius:after,.radius-row:after,.arc:after,#arc:after{content:"";display:table;clear:both;}
 /*RADIUS in PieCss represents Inner major sectors - that is Rows and columns*/
 /*Full width radius ->(row and column)
 *The use of 'row' may be deprecated in the future to give rise to full radius rules
@@ -165,17 +169,17 @@ p{margin-top:0;margin-bottom:auto;} mark{background-color:#E6E6FA;padding:10px;}
 #pie-75{position:absolute;width:75%;height:auto;overflow:hidden;}
 
 /*Mobile responsiveness for any rows chosen above*/
-@media(max-width:600px){.radius-row-half{position:absolute;width:100%;height:auto;overflow:hidden;}
+@media(max-width:600px){.radius-row-half{position:absolute;width:100%;height:auto;overflow:hidden;;}
 	#pie-180{position:absolute;width:100%;height:auto;overflow:hidden;}}
-@media(max-width:600px){.radius-row-third{position:absolute;width:100%;height:auto;overflow:hidden;}
+@media(max-width:600px){.radius-row-third{position:absolute;width:100%;height:auto;overflow:hidden;;}
 	#pie-120{position:absolute;width:100%;height:auto;overflow:hidden;}}
-@media(max-width:600px){.radius-row-quarter{position:absolute;width:100%;height:auto;overflow:hidden;}
+@media(max-width:600px){.radius-row-quarter{position:absolute;width:100%;height:auto;overflow:hidden;;}
     #pie-90{position:absolute;width:100%;height:auto;overflow:hidden;}}
-	@media(max-width:990px){.radius-row-quarter{position:absolute;width:50%;height:auto;overflow:hidden;}
+	@media(max-width:990px){.radius-row-quarter{position:absolute;width:50%;height:auto;overflow:hidden;;}
     #pie-90{position:absolute;width:50%;height:auto;overflow:hidden;}}
-@media(max-width:600px){.radius-row-two{position:absolute;width:100%;height:auto;overflow:hidden;}
+@media(max-width:600px){.radius-row-two{position:absolute;width:100%;height:auto;overflow:hidden;;}
     #pie-66{position:absolute;width:100%;height:auto;overflow:hidden;}}
-@media(max-width:600px){.radius-row-three{position:absolute;width:100%;height:auto;overflow:hidden;}
+@media(max-width:600px){.radius-row-three{position:absolute;width:100%;height:auto;overflow:hidden;;}
     #pie-75{position:absolute;width:100%;height:auto;overflow:hidden;}}
 /*Rows and column using radius definitions ends*/
 
@@ -275,11 +279,11 @@ p{margin-top:0;margin-bottom:auto;} mark{background-color:#E6E6FA;padding:10px;}
 /*Rows and column manipulation ends*/
 
 /*Background image for any element - discourages a repeat*/
-/*Without animations*/
-.bg-image{background-image:url('../images/internet-screen-security-protection.jpg'); background-repeat:no-repeat;
+/*Without animation*/
+.bg-image{background-image:url('../images/map-coming-soon.jpg'); background-repeat:no-repeat;
   background-attachment:fixed; background-position:top; background-size:auto;}
-/*With animations*/
-.bg-image-animate{background-image:url('/*specify image url*/');background-position:top; background-size:auto;
+/*With animation*/
+.bg-image-animate{background-image:url('../images/map-coming-soon.jpg');background-attachment:fixed; background-position:top; background-size:auto;
   background-repeat:no-repeat; animation:animatedBackground 40s linear infinite;}
   @keyframes animatedBackground{from{background-position: 0 0;}
 	to{background-position: 100% 0;}}
@@ -443,7 +447,7 @@ a[title=""]{content:"visit my link";}
 img{vertical-align:middle;} .pie-image{max-width:100%;height:auto;}
 
 /*contain images*/
-img.bg-image,img.bg-image-animate{position:relative; height:100%; width:100%;background-repeat:no-repeat;background-size:100% 100%;}
+img.bg-image,img.bg-image-animate{width:100%;background-repeat:no-repeat;background-size:100% 100%;}
 
 /*Give all images a default title attribute when none is present;
 *useful for SEO;
@@ -754,6 +758,7 @@ color:#000;min-height:36px;line-height:1rem;opacity:0;display:none;position:abso
 /*Line background in any sectors*/
 .pie-linebg{position:absolute;left:0;right:0;top:0;bottom:0;z-index:0;}
 
+
 /*MARGIN; PADDING; BORDER*/
 /*No margin; No padding; No border*/
 .nomargin{margin:0 !important;} .nopadding{padding:0 !important;} .noborder{border:none !important;}
@@ -791,6 +796,7 @@ color:#000;min-height:36px;line-height:1rem;opacity:0;display:none;position:abso
 .border-right-s{border-right:3px solid #ccc;}.border-right-m{border-right:9px solid #ccc;}.border-right-l{border-right:16px solid #ccc;}
 .border-right-xl{border-right:32px solid #ccc;}
 /*Display Modes end here*/
+
 
 /*Introducing the chord(ch) class(Experimental: Do not use)*/
 .ch{font:inherit;}
@@ -1454,8 +1460,8 @@ section.pie-dragcursor{visibility:visible;}
 .text-bold{font-weight:400 !important;} .text-bolder{font-weight:800 !important;} 
 .text-italics{font-style:italic !important;} .text-oblique{font-style:oblique !important;}
 .text-x-small{font-size:x-small !important;} .text-small{font-size:small !important;} .text-medium{font-size:medium !important;} 
-.text-large{font-size:large !important;}  .text-x-large{font-size:x-large !important;} 
-.font-large{font-size:32px !important;} .font-larger{font-size:64px !important;}
+.text-large{font-size:large !important;}  .text-x-large{font-size:x-large !important;}
+.font-large{font-size:32px !important;} .font-larger{font-size:64px !important;} 
 .text-overline{text-decoration:overline !important;} .text-underline{text-decoration:underline !important;} 
 .text-strike{text-decoration:line-through !important;}
 .text-underline.text-overline{text-decoration:underline overline !important;}
@@ -1545,28 +1551,28 @@ section.pie-dragcursor{visibility:visible;}
 
 /*;;;;;;;;;;;;;;;;;;;;;;SECTION 3 - DECLARE NEW FONTS;;;;;;;;;;;;;;;;;;;;;;;*/
 /*Declaring the abeeze fontset - please refer to documentation on this font*/
-@font-face{font-family:"abeezee italic";src:url('../include/font/aBeeZee/ABeeZee-Italic.ttf');font-weight:italic;}
-@font-face{font-family:"abeezee regular";src:url('../include/font/aBeeZee/ABeeZee-Regular.ttf');font-weight:normal;}
+@font-face{font-family:"abeezee italic";src:url('./include/font/aBeeZee/ABeeZee-Italic.ttf');font-weight:italic;}
+@font-face{font-family:"abeezee regular";src:url('./include/font/aBeeZee/ABeeZee-Regular.ttf');font-weight:normal;}
 
 /*Declaring the expressway-free fontset - please refer to documentation on this font*/
-@font-face{font-family:"expressway rg";src:url('../include/font/expressway-free/expressway rg.ttf');font-weight:normal;}
+@font-face{font-family:"expressway rg";src:url('./include/font/expressway-free/expressway rg.ttf');font-weight:normal;}
 
 /*Declaring the good-times fontset - please refer to documentation on this font*/
-@font-face{font-family:"good times";src:url('../include/font/expressway-free/good times rg.ttf');font-weight:normal;}
+@font-face{font-family:"good times";src:url('./include/font/expressway-free/good times rg.ttf');font-weight:normal;}
 
 /*Declaring the homoarak fontset - please refer to documentation on this font*/
-@font-face{font-family:homoarak;src:url('../include/font/homoarak/HOMOARAK.TTF');font-weight:normal;}
+@font-face{font-family:homoarak;src:url('./include/font/homoarak/HOMOARAK.TTF');font-weight:normal;}
 
 /*Declaring the loopy fontset - please refer to documentation on this font*/
-@font-face{font-family:"loopy italics";src:url('../include/font/loopy/LOOPY_IT.TTF');font-weight:italic;}
-@font-face{font-family:loopy;src:url('../include/font/loopy/LOOPY___.TTF');font-weight:normal;}
+@font-face{font-family:"loopy italics";src:url('./include/font/loopy/LOOPY_IT.TTF');font-weight:italic;}
+@font-face{font-family:loopy;src:url('./include/font/loopy/LOOPY___.TTF');font-weight:normal;}
 
 /*Declaring the mexcellent fontset - please refer to documentation on this font*/
-@font-face{font-family:"mexcellent 3d";src:url('../include/font/mexcellent/mexcellent 3d.ttf');font-weight:normal;}
-@font-face{font-family:"mexcellent rg";src:url('../include/font/mexcellent/mexcellent rg.ttf');font-weight:normal;}
+@font-face{font-family:"mexcellent 3d";src:url('./include/font/mexcellent/mexcellent 3d.ttf');font-weight:normal;}
+@font-face{font-family:"mexcellent rg";src:url('./include/font/mexcellent/mexcellent rg.ttf');font-weight:normal;}
 
 /*Declaring the trashco fontset - please refer to documentation on this font*/
-@font-face{font-family:trashco;src:url('../include/font/trashco/trashco.ttf');font-weight:normal;}
+@font-face{font-family:trashco;src:url('./include/font/trashco/trashco.ttf');font-weight:normal;}
 /*PIE TYPOGRAPHY CSS ENDS*/
 /*;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;*/
 /*;
