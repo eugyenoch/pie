@@ -1,9 +1,10 @@
 /*;
-* PieJS v1.0.0 ()
-* Copyright 2020 by Eugy Enoch (https://eugyenoch.github.io)
-* For PieCSS,PieJS Released under the MIT License
+* PieJS v1.1.0 ()
+* Copyright 2020 by Eugy Enoch 
+* https://eugyenoch.github.io/pie/
+* For Pie framework and library; 
+* Released under the MIT License
 *
-*Originally developed by David U. Enoch(Eugy Enoch) in the year of the Lord 2020.
 *See the readme file associated with this software for licencing and contact.
 */
 
@@ -105,9 +106,18 @@ pie.getElementsByAttribute = function (x, att) {
   return range;
 }; 
 
+//Popout form
+pie.openForm=function() {
+  document.getElementById("popForm").style.display = "block";
+};
+
+pie.closeForm=function() {
+  document.getElementById("popForm").style.display = "none";
+};
+
 //Slider
 
-imgslider = function(){
+pie.imgslider = function(){
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -127,7 +137,8 @@ function showDivs(n) {
 }
 };
 
-//List Toogler - Tree-view-arow
+//List Toggler - Tree-view-arrow
+pie.treeArrow=function(){
 var toggler = document.getElementsByClassName("tree-view-arrow");
 var i;
 
@@ -137,8 +148,9 @@ for (i = 0; i < toggler.length; i++) {
     this.classList.toggle("tree-view-arrow");
   });
 }
-
+};
 //List Toggler - Tree-view-check
+pie.treeChecker=function(){
 var checker = document.getElementsByClassName("tree-view-check");
 var i;
 
@@ -148,12 +160,4 @@ for (i = 0; i < checker.length; i++) {
     this.classList.toggle("tree-view-checkbox");
   });
 }
-
-//Popout form
-function openForm() {
-  document.getElementById("popForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("popForm").style.display = "none";
-}
+};
