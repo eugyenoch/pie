@@ -1,3 +1,14 @@
+/*;
+* PieJS v1.1.0 ()
+* history.js for PieJS
+* Copyright 2020 by Eugy Enoch
+* For The Pie fameworks and Library; 
+* https://eugyenoch.github.io/pie/
+* Released under the MIT License.
+*
+*See the readme file associated with this software for licencing and contact.
+*/
+
 /*
 ;The history object contains URLs visited by a user
 ;a user can choose to go back or forward
