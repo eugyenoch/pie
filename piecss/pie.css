@@ -1205,7 +1205,7 @@ color:#000;min-height:36px;line-height:1rem;opacity:0;display:none;position:abso
 .col-darkpink{column-rule:5px double #ff4d6a!important;-webkit-column-rule:5px double #ff4d6a!important;-moz-column-rule:5px double #ff4d6a!important;}
 
 .color-hotpink,.color-hover-hotpink:hover{color:#000!important;background-color:#ff69b4!important;}
-.text-color-hotpink,.text-color-hover-hotpink:hover{color#ff69b4!important;}
+.text-color-hotpink,.text-color-hover-hotpink:hover{color:#ff69b4!important;}
 .border-color-hotpink,.border-color-hover-hotpink:hover{border-color:#ff69b4!important;}
 .caretcolor-hotpink{caret-color:#ff69b4!important;} .color-focus-hotpink:focus{background-color:#ff69b4!important;}
 .col-hotpink{column-rule:5px double #ff69b4!important;-webkit-column-rule:5px double #ff69b4!important;-moz-column-rule:5px double #ff69b4!important;}
@@ -1292,6 +1292,18 @@ color:#000;min-height:36px;line-height:1rem;opacity:0;display:none;position:abso
 /*Linear gradient for Red - vertical*/
 .linear-gradient-red-v{background-image:linear-gradient(to right,#f44336,#dc143c,#cd5c5c,#ffe6e6,#ffe7e7) !important;}
 
+/*White => white and snow-white*/
+.color-white,.color-hover-white:hover{color:#000!important;background-color:#fff!important;}
+.text-color-white,.text-color-hover-white:hover{color:#fff!important;}
+.border-color-white,.border-color-hover-white:hover{border-color:#fff!important;}
+.caretcolor-white{caret-color:#fff!important;} .color-focus-white:focus{background-color:#fff!important;}
+.col-white{column-rule:5px double #fff!important;-webkit-column-rule:5px double #fff!important;-moz-column-rule:5px double #fff!important;}
+
+.color-snow-white,.color-hover-snow-white:hover{color:#000!important;background-color:#fffafa!important;}
+.text-color-snow-white,.text-color-hover-snow-white:hover{color:#fffafa!important;}
+.border-color-snow-white,.border-color-hover-snow-white:hover{border-color:#fffafa!important;}
+.caretcolor-snow-white{caret-color:#fffafa!important;} .color-focus-snow-white:focus{background-color:#fffafa!important;}
+.col-snow-white{column-rule:5px double #fffafa!important;-webkit-column-rule:5px double #fffafa!important;-moz-column-rule:5px double #fffafa!important;}
 
 /*Yellow => yellow,gold,moccasin and pale-yellow*/
 .color-yellow,.color-hover-yellow:hover{color:#000!important;background-color:#d2be0e!important;}
@@ -1321,19 +1333,6 @@ color:#000;min-height:36px;line-height:1rem;opacity:0;display:none;position:abso
 .linear-gradient-yellow-h{background-image:linear-gradient(#d2be0e,#ffd700,#ffe4b5,#ffffcc) !important;}
 /*Linear gradient for Yellow - vertical*/
 .linear-gradient-yellow-v{background-image:linear-gradient(to right,#d2be0e,#ffd700,#ffe4b5,#ffffcc) !important;}
-
-/*White => white and snow-white*/
-.color-white,.color-hover-white:hover{color:#000!important;background-color:#fff!important;}
-.text-color-white,.text-color-hover-white:hover{color:#fff!important;}
-.border-color-white,.border-color-hover-white:hover{border-color:#fff!important;}
-.caretcolor-white{caret-color:#fff!important;} .color-focus-white:focus{background-color:#fff!important;}
-.col-white{column-rule:5px double #fff!important;-webkit-column-rule:5px double #fff!important;-moz-column-rule:5px double #fff!important;}
-
-.color-snow-white,.color-hover-snow-white:hover{color:#000!important;background-color:#fffafa!important;}
-.text-color-snow-white,.text-color-hover-snow-white:hover{color:#fffafa!important;}
-.border-color-snow-white,.border-color-hover-snow-white:hover{border-color:#fffafa!important;}
-.caretcolor-snow-white{caret-color:#fffafa!important;} .color-focus-snow-white:focus{background-color:#fffafa!important;}
-.col-snow-white{column-rule:5px double #fffafa!important;-webkit-column-rule:5px double #fffafa!important;-moz-column-rule:5px double #fffafa!important;}
 
 /*Your Custom Color => Replace comments with any color name/code or none*/
 .color-myPie,.color-hover-myPie:hover{color:/*specify color*/!important;background-color:/*specify color*/!important;}
