@@ -1,5 +1,4 @@
 /*;
-* PieJS v1.1.0 ()
 * clockdate.js for PieJS timers
 * Copyright 2020 by Eugy Enoch 
 * https://eugyenoch.github.io/pie
