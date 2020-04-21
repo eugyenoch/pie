@@ -1,4 +1,4 @@
-# PieJS V1.1.0 BETA
+# PieJS V1.2.0 BETA
 PieJS(Pie-JS) or pie.js is a modern and SEO friendly JavaScript library and part of the Pie Framework which also includes:
 The PieCSS or pie.css technology. 
 It is still being developed and it is intended to be among the most used JS frameworks for fast development of websites and web applications that are targeted for all devices and suitable for any and every occasions.
