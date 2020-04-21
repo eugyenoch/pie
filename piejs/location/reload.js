@@ -1,5 +1,4 @@
 /*;
-* PieJS v1.1.0 ()
 * Reload.js for PieJS location model
 * Copyright 2020 by Eugy Enoch 
 * https://eugyenoch.github.io/pie/
