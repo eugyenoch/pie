@@ -1,5 +1,4 @@
 /*;
-* PieJS v1.1.0 ()
 * countdown.js; plugin for webmasters
 * Copyright 2020 by Eugy Enoch
 * https://eugyenoch.github.io/pie/
