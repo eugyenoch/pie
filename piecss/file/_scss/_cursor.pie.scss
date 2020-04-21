@@ -1,0 +1,64 @@
+/*;
+* PieCSS v1.1.0 ()
+* _cursor.pie.scss
+* Copyright 2020 by Eugy Enoch 
+* https://eugyenoch.github.io/pie/
+* For Pie framework and library; 
+* Released under the MIT License
+*
+*See the readme file associated with this software for licencing and contact.
+ */
+ 
+/*Cursors and row measurements*/
+/*Overwrite cursor different mode */
+.pie-overwrite .pie-cursor{}
+
+/*Cursors styling*/
+.pie-cursor{position:absolute; pointer-events:none;}
+section.pie-cursors{visibility:hidden;position:relative;z-index:2;}
+section.pie-dragcursor{visibility:visible;}
+.pie-focused section.pie-cursors{visibility:visible;}
+.pie-cursor{border-left:1px solid black;border-right:none;width:0;}
+
+/* Shown when moving in bi-directional text*/
+.pie,.pie-secondarycursor{border-left:1px solid silver;}
+.pie-big-cursor .pie-cursor{width:auto;border:0 !important;background:#7e7;}
+.pie-big-cursor .pie-cursors{z-index: 1;}
+
+/*Disable mouse and pointer events - also available at the main pie.css file*/
+.pie-disabled{cursor:not-allowed !important;} .pie-disabled *,:disabled *{pointer-events:none !important;}
+
+/*Hide cursor on a class*/
+.cursor-none{cursor: none !important;}
+
+/*Animate cursors*/
+.pie-animate-fat-cursor{width:auto;border:0;-webkit-animation:blink 1.06s steps(1) infinite;-moz-animation:blink 1.06s steps(1) infinite;animation:blink 1.06s steps(1) infinite;background-color: #7e7;}
+@-moz-keyframes blink {0%{}50%{background-color:transparent;}100%{}}
+@-webkit-keyframes blink {0%{} 50%{background-color:transparent;}100%{}}
+@keyframes blink{0%{}50%{background-color:transparent;}100%{}}
+
+/*Differnet cursor pointer styles to use within an HTML element or even for your entire <body> element*/
+.cursor-alias{cursor:alias;} .cursor-all-scroll{cursor:all-scroll;} .cursor-auto{cursor:auto;}
+.cursor-cell{cursor:cell;} .cursor-context-menu{cursor:context-menu;} .cursor-col-resize{cursor:col-resize;}
+.cursor-copy{cursor:copy;} .cursor-crosshair{cursor:crosshair;} .cursor-e-resize{cursor:e-resize;}
+.cursor-ew-resize{cursor:ew-resize;}.cursor-grab{cursor:-webkit-grab; cursor:grab;}
+.cursor-grabbing{cursor:-webkit-grabbing; cursor:grabbing;}
+.cursor-help{cursor:help;}.cursor-move{cursor:move;}.cursor-n-resize{cursor:n-resize;}
+.cursor-ne-resize{cursor:ne-resize;}.cursor-nesw-resize{cursor:nesw-resize;}.cursor-ns-resize{cursor:ns-resize;}
+.cursor-nw-resize{cursor:nw-resize;}.cursor-nwse-resize{cursor:nwse-resize;}.cursor-no-drop{cursor:no-drop;}
+.cursor-not-allowed{cursor:not-allowed;}.cursor-pointer{cursor:pointer;}.cursor-progress{cursor:progress;}
+.cursor-row-resize{cursor:row-resize;}.cursor-s-resize{cursor:s-resize;}
+.cursor-se-resize{cursor:se-resize;}.cursor-sw-resize{cursor:sw-resize;}.cursor-text{cursor:text;}
+.cursor-w-resize{cursor:w-resize;}.cursor-wait{cursor:wait;}
+.cursor-zoom-in{cursor:zoom-in;}.cursor-zoom-out{cursor:zoom-out;}
+
+/*Reset mouse pointer shape to default*/
+.cursor-default{cursor:default !important;}
+
+/*
+*Hide the cursor when printing 
+*It is okay to replace "section" with "div" or any relevant element and use.
+*/
+@media print{.pie section.hide-cursors {visibility:hidden;}}
+
+/*end of Cursors styling*/
