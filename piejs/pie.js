@@ -1,5 +1,5 @@
 /*;
-* PieJS v1.1.0 ()
+* PieJS
 * Copyright 2020 by Eugy Enoch 
 * https://eugyenoch.github.io/pie/
 * For Pie framework and library; 
