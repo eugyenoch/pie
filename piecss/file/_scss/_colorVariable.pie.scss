@@ -1,5 +1,4 @@
 /*;
-* PieCSS v1.2.0 ()
 * _colorVariable.pie.scss
 * Copyright 2020 by Eugy Enoch 
 * https://eugyenoch.github.io/pie/
@@ -9,8 +8,17 @@
 *See the readme file associated with this software for licencing and contact.
  */
 
-//Declaring _color Variables
+ /*For custom color Replace comment only with any color name, color code 
+ *or simply type none*/
 
+$color-custom:/*Specify custom text color*/;
+$color-bgcustom1:/*Specify custom background color*/
+$color-bgcustom2:/*Specify second custom background color*/
+$color-bgcustom3:/*Specify third custom background color*/
+$color-bgcustom4:/*Specify fourth custom background color*/
+
+
+//Declaring other color Variables
 $color-amber:#ffc107 !important;
 $color-amberdark:#ff6f00 !important;
 $color-amberlight:#fff78e1 !important;
