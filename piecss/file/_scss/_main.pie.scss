@@ -810,9 +810,15 @@ color:#000;min-height:36px;line-height:1rem;opacity:0;display:none;position:abso
 
 /*Main CSS ends here*/
 
+//Imports to main scss file
+@import "arc.pie";
+@import "color.pie";
+@import "cursor.pie";
+@import "typo.pie";
+@import "vendor.pie";
+
 /*;
 * NOTE TO USER
 *The pie.css software contains some styles that are related to the internal workings of a document.
 *You may not touch them unless you know what you do.
 */
-/*;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;*/
