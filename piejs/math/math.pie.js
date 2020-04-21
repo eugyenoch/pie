@@ -1,7 +1,7 @@
 /*
-*Javascript developed originally for use in the Eugy calculator software program
-*and now included in the PieJS build
-*Developed by David U. Enoch(Eugy Enoch) in the year of the Lord 2020.
+*calculator.js developed originally for use in the Eugy calculator software program
+*and now included in the PieJS build as math.pie.js
+*Developed by Eugy Enoch in the year 2020.
 *
 *Permission is hereby granted, free of charge, to any person obtaining a copy
 *of this software and associated documentation files (the "Software"), to deal
