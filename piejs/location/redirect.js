@@ -1,5 +1,4 @@
 /*;
-* PieJS v1.1.0 ()
 * redirect.js; plugin for webmasters
 * Copyright 2020 by Eugy Enoch
 * For The Pie fameworks and Library; 
