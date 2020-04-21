@@ -1,5 +1,4 @@
 /*;
-* PieJS v1.1.0 ()
 * geolocation.js for Pie
 * Geolocation plugin for webmasters
 * Copyright 2020 by Eugy Enoch
