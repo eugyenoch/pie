@@ -15,11 +15,11 @@ Sponsors are welcome to contribute via any number of ways and Collaborators are 
 
 ## PREPROCESSOR
 A preprocessor is a computer program that processes input data and produces an output that is used as input to another computer program. In CSS, a preprocessor lets you generate CSS from the preprocessor’s own unique code.
-The preprocessor implemented for the pie.css framework asides “#CSS” is the “Sassy CSS => SCSS” because it allows for easy implementation of CSS3 syntax. Basically, every valid SCSS stylesheet is valid in CSS3 and Sass as well and which makes Scss less cumbersome and easier to understand .
+The preprocessor implemented for the pie.css framework asides “#CSS” is the “Sassy CSS => SCSS” because it allows for easy implementation of CSS3 syntax. Basically, every valid SCSS stylesheet is valid in CSS3 and SASS as well and which makes Scss less cumbersome and easier to understand .
 
 ## IMPLEMENTATION OF SCSS
 For this version of pie.css, the Scss preprocessor have been implemented in the chunks(individual stylesheets for the different presentation systems) and not in the combine(combine and combine-minified) pie.css file. 
-*To use Scss, Sass will have to be downloaded and installed on local machine.*
+*To use SCSS; SASS will have to be downloaded and installed on local machine.*
 
 ## LICENSING
 The PieCSS framework is licensed under the MIT license.Read more about the MIT license here: https://github.com/eugyenoch/pie/blob/master/LICENSE
