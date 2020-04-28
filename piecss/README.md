@@ -1,4 +1,4 @@
-# INTRO TO PIECSS v1.2.0 BETA UPGRADE
+# INTRO TO PIECSS v1.3.0 BETA UPGRADE
 PieCSS(Pie-CSS) or pie.css is a modern and SEO friendly framework and part of the Pie Framework which also includes The PieJs or pie.js technology. It is intended to be among the most used HTML, CSS and JS frameworks for developing websites and web applications that are responsive and suitable for any and every occasions.
 PieCSS is also intended to add speed and make learning and using the framework and technology easy for all.
 Above all, PieCSS is the first SEO, SMO and Digital Marketing friendly CSS framework.
