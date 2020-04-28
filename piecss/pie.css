@@ -1,5 +1,5 @@
 /*;
-* PieCSS v1.2.0 ()
+* PieCSS v1.3.0 ()
 * Copyright 2020 by Eugy Enoch 
 * https://eugyenoch.github.io/pie/
 * For Pie framework and library; 
@@ -917,10 +917,13 @@ color:#000;min-height:36px;line-height:1rem;opacity:0;display:none;position:abso
 .col-black{column-rule:5px double #000!important;-webkit-column-rule:5px double #000!important;-moz-column-rule:5px double #000!important;}
 
 .color-darkgrey,.color-hover-darkgrey:hover{color:#000!important;background-color:#616161!important;}
-.text-color-darkgrey,.text-color-darkgray,.text-color-hover-darkgrey:hover,.text-color-hover-darkgray:hover{color:#616161!important;}
-.border-color-darkgrey,.border-color-darkgray,.border-color-hover-darkgrey:hover,.border-color-hover-darkgray:hover{border-color:#616161!important;}
-.caretcolor-darkgrey{caret-color:#616161!important;} .color-focus-darkgrey:focus{background-color:#616161!important;}
-.col-darkgrey{column-rule:5px double #616161!important;-webkit-column-rule:5px double #616161!important;-moz-column-rule:5px double #616161!important;}
+.text-color-darkgrey,.text-color-darkgray,.text-color-hover-darkgrey:hover,
+.text-color-hover-darkgray:hover{color:#616161!important;}
+.border-color-darkgrey,.border-color-darkgray,.border-color-hover-darkgrey:hover,
+.border-color-hover-darkgray:hover{border-color:#616161!important;}
+.caretcolor-darkgrey,.caretcolor-darkgray{caret-color:#616161!important;} 
+.color-focus-darkgrey:focus,.color-focus-darkgray:focus{background-color:#616161!important;}
+.col-darkgrey,.col-darkgray{column-rule:5px double #616161!important;-webkit-column-rule:5px double #616161!important;-moz-column-rule:5px double #616161!important;}
 
 .color-grey,.color-gray,.color-hover-gray:hover,.color-hover-grey:hover{color:#000!important;background-color:#9e9e9e!important;}
 .text-color-grey,.text-color-gray,.text-color-hover-grey:hover,.text-color-hover-gray:hover{color:#9e9e9e!important;}
@@ -1029,6 +1032,7 @@ color:#000;min-height:36px;line-height:1rem;opacity:0;display:none;position:abso
 .linear-gradient-cyan-h{background-image:linear-gradient(#00bcd4,#00b8d4,#e0f7fa) !important;}
 /*Linear gradient for Cyan - vertical*/
 .linear-gradient-cyan-v{background-image:linear-gradient(to right,#00bcd4,#00b8d4,#e0f7fa) !important;}
+
 
 /*Green => green,dark-green,forest-green,light-green,olivedrab,pale-green and teal*/
 .color-green,.color-hover-green:hover{color:#000!important;background-color:#4caf50!important;}
@@ -1256,7 +1260,7 @@ color:#000;min-height:36px;line-height:1rem;opacity:0;display:none;position:abso
 /*Linear gradient for Purple - vertical*/
 .linear-gradient-purple-v{background-image:linear-gradient(to right,#9c27b0,#673ab7,#e6e6fa,#da70d6,#ee82ee) !important;}
 
-	
+  
 /*Red => red,crimson,indianred,light-red and pale-red*/
 .color-red,.color-hover-red:hover{color:#fff!important;background-color:#f44336!important;}
 .text-color-red,.text-color-hover-red:hover{color:#f44336!important;}
